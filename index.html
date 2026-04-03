@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ana ❤️🐾</title>
+    <link rel="stylesheet" href="diseño.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="bg-canvas"></div>
+    <div class="cursor-paw"></div>
+
+    <div class="main-container">
+        <section class="card-section">
+            <div class="glass-card reveal" data-tilt>
+                <div class="aura-glow"></div>
+                <h1 class="title">Hola, Ana</h1>
+                <p class="text">A veces el tiempo nos vuelve a cruzar con personas especiales en el momento justo. Me ha dado un gusto enorme volver a platicar contigo estos días. Hablar contigo ha sido de lo mejor en estos últimos días.</p>
+                <div class="scroll-arrow">Desliza hacia abajo</div>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <div class="glass-card reveal" data-tilt>
+                <div class="aura-glow"></div>
+                <h2 class="subtitle">Tu mundo 🐾</h2>
+                <p class="text">Admiro profundamente tu entrega. Sé que las jornadas de veterinaria son pesadas, pero verte cuidar a los perritos con ese amor dice mucho de lo increíble que eres.</p>
+                <div class="btn-box">
+                    <span class="btn-label">Toca para tu sorpresa animal</span>
+                    <button class="action-btn vet-btn" onclick="celebrate(event, 'vet')">
+                        ¡Clic aquí! 🐶🦴
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <div class="glass-card highlight reveal" data-tilt>
+                <div class="aura-glow primary"></div>
+                <h2 class="subtitle italic">Tengo un plan...</h2>
+                <p class="text">Me encantaría verte, confirmar vernos y que me cuentes todo de tu carrera en persona. Hagamos que este <b>sábado 11</b> sea especial.</p>
+                
+                <div class="calendar-card">
+                    <span class="month">ABRIL</span>
+                    <span class="day">11</span>
+                </div>
+
+                <div class="final-flow" id="final-step">
+                    <span class="btn-label">¿Qué dices?</span>
+                    
+                    <div class="confirm-btns" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                        <form action="https://formspree.io/f/mlgowydn" method="POST" id="confirm-form">
+                            <input type="hidden" name="respuesta" value="Ana dijo que SÍ al plan del Sábado 11">
+                            <button type="submit" class="action-btn final-btn" id="yes-btn">
+                                Sábado 11... 🌹
+                            </button>
+                        </form>
+                        <button type="button" class="action-btn" id="no-btn" style="border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.4);">
+                            Quizá luego...
+                        </button>
+                    </div>
+
+                    <p class="final-text" id="final-message">
+                        Ana...<br>
+                        <span class="sign-off">Te veo pronto. Andrés</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="animacion.js"></script>
+</body>
+</html>
